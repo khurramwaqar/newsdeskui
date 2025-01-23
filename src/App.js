@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import Users from "./pages/Users";
 import Settings from "./pages/Settings";
 import Signup from "./auth/Signup";
+import AddNewPost from "./pages/posts/AddNewPost";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/users" element={<Users />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/auth/signup" element={<Signup />} />
+          <Route path="/post/new" element={<AddNewPost />} />
         </Routes>
       </Layout>
     </Router>
